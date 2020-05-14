@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
+##############################################################################
+# Name : Walden Wang
+# UNI : dw2723
+# Final Project
+# 
+# This file contains the main functions of my personal webpage
+#
+##############################################################################
 
-@author: etill
-"""
 
 #import statements
 from flask import Flask, render_template
@@ -17,11 +21,12 @@ def test():
     # return render_template("index.html")
     return render_template("index.html")
 
-
+#Assignment route
 @app.route("/Assignments")
 def assignmentpage():
     return render_template("assignment.html")
 
+#Class page route
 @app.route("/Classes")
 def classpage():
     return render_template("class.html")

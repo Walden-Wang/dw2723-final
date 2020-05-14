@@ -19,8 +19,12 @@ def test():
 
 
 @app.route("/Assignments")
-def mainpage():
-    return "I'm Walden"
+def assignmentpage():
+    return render_template("assignment.html")
+
+@app.route("/Classes")
+def classpage():
+    return render_template("class.html")
 
 #start the server
 if __name__ == "__main__":
